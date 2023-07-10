@@ -26,7 +26,7 @@ const Partnership = () => {
     AOS.init({ duration: 1200 });
   }, []);
   return (
-    <div>
+    <div id="partnership">
       <PartnershipHero />
       <PartnershipProgram />
       <PartnershipServices />

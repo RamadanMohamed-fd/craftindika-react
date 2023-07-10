@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 import {
   MdOutlineCancel,
   MdConnectingAirports,
@@ -57,7 +58,9 @@ const Bar = () => {
           <li className="hover:text-[#c5a56f] duration-300 px-4 py-2 m-2">
             <a href="#" className="flex flex-col justify-center items-center">
               <GiStoneCrafting className=" text-4xl" />
-              <span>CraftPartner</span>
+              <Link to="/partnership">
+                <span>CraftPartner</span>
+              </Link>
             </a>
           </li>
           <li className="hover:text-[#c5a56f] duration-300 px-4 py-2 m-2">

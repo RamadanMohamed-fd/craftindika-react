@@ -1,6 +1,7 @@
 import React from "react";
 import "./partnershiphero.css";
 import Bar from "../../LandingPage/Hero/Bar";
+import { Link } from "react-router-dom";
 // import "../../LandingPage/Hero/hero.css";
 const PartnershipHero = () => {
   return (
@@ -29,7 +30,7 @@ const PartnershipHero = () => {
             <a href="#">Curations</a>
           </li>
           <li className=" ul relative px-4 ">
-            <a href="#">CraftPartner</a>
+            <Link to="/partnership">CraftPartner</Link>
           </li>
           <li className=" relative ul px-4">
             <a href="#">Connect</a>

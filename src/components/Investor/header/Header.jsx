@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./header.css";
-
+import { Link } from "react-router-dom";
 import Bar from "../../LandingPage/Hero/Bar";
 const Header = (props) => {
   const handleValue = () => {
@@ -36,7 +36,7 @@ const Header = (props) => {
             <a href="#">Curations</a>
           </li>
           <li className=" px-4 u relative duration-300">
-            <a href="#">CraftPartner</a>
+            <Link to="/partnership">CraftPartner</Link>
           </li>
           <li className="u relative px-4">
             <a href="#">Connect</a>

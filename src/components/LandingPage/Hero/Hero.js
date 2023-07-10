@@ -35,7 +35,7 @@ const Hero = () => {
             <a href="#">Curations</a>
           </li>
           <li className=" ul relative px-4 ">
-            <a href="#">CraftPartner</a>
+            <Link to="/partnership">CraftPartner</Link>
           </li>
           <li className=" relative ul px-4">
             <a href="#">Connect</a>

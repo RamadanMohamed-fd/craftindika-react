@@ -1,12 +1,13 @@
 import React from "react";
 import FooterLogo from "./FooterLogo";
 import "./footer.css";
+import { Link } from "react-router-dom";
 const Footer = (props) => {
   const data = [
     { title: " Company", url: "#" },
     { title: "Collections", url: "#" },
     { title: "Curations", url: "#" },
-    { title: "CraftPartner", url: "#" },
+    { title: "CraftPartner", url: "/partnership" },
     { title: "Contact", url: "#" },
   ];
   const con_data = [
@@ -38,12 +39,14 @@ const Footer = (props) => {
                 >
                   0{i + 1}.
                 </p>
-                <h3
-                  data-aos="fade-right"
-                  className=" text-[45px]  duration-500 text opacity-80 max-sm:text-4xl"
-                >
-                  {d.title}
-                </h3>
+                <Link to={d.url}>
+                  <h3
+                    data-aos="fade-right"
+                    className=" text-[45px]  duration-500 text opacity-80 max-sm:text-4xl"
+                  >
+                    {d.title}
+                  </h3>
+                </Link>
               </a>
             </div>
           ))}
