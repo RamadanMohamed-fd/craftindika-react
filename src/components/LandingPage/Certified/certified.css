@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap");
+@import "../../../fonts.css";
+
+.certified {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 10rem;
+}
+
+.certified_content {
+  background-color: #edeae5;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.certified_content h3 {
+  font-weight: 100;
+  font-size: 47px;
+  line-height: 50px;
+  text-align: center;
+  color: #343935;
+  font-family: "MADE-Mirage";
+  margin: 0;
+}
+
+.certified_content p {
+  font-family: "Red Hat Display";
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 20px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.certified_content_button {
+  font-style: normal;
+  font-family: "Red Hat Display";
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 20px;
+  width: fit-content;
+  border: 1px solid rgba(52, 57, 53, 1);
+  border-radius: 4rem;
+  text-align: right;
+  color: rgba(52, 57, 53, 1);
+  cursor: pointer;
+}
+
+.certified_content_button p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.certified_content_button span {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 970px) {
+  .certified {
+    padding: 2rem 6rem;
+  }
+
+  .certified_content {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .certified {
+    padding: 2rem 2rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 590px) {
+  .certified_content h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .certified_content p {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+  .certified {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+}

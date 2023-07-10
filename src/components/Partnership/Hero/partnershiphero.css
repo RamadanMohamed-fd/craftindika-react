@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display:wght@300;400;500;600&display=swap");
+@import "../../../fonts.css";
+
+.partnership_hero {
+  background: url("../../../images/Partnership/Hero/partnership_hero_main_image.webp");
+  /* padding-left: 1.5rem; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.partnership_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.partnership_hero_heading {
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partnership_hero_heading h1 {
+  font-family: "MADE-Mirage";
+  font-weight: 100;
+  position: relative;
+  font-style: normal;
+  font-size: 120px;
+  line-height: 120px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.partnership_hero_heading span {
+  font-size: 25px;
+  font-weight: 400;
+  vertical-align: super;
+}

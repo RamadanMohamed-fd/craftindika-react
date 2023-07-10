@@ -1,0 +1,166 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
+.partnership_hero {
+  padding: 0.5rem 3rem 8rem 3rem;
+  background-position: center;
+  background-size: fill;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  height: auto;
+}
+
+.partnership_hero.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.partnership_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.partnership_hero_nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.partnership_hero_nav_logo h3 {
+  font-family: 'MADE-Mirage';
+  position: relative;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+.partnership_hero_nav ul {
+  list-style: none;
+}
+
+.partnership_hero_nav ul li {
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  padding-right: 1.8rem;
+  letter-spacing: 0.09em;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.partnership_hero_nav .menu_items li:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.partnership_hero_nav .menu_items li:hover:before {
+  width: 70%;
+}
+
+.partnership_hero_heading {
+  margin-top: 11rem;
+  margin-bottom: 1rem;
+}
+
+.partnership_hero_heading h1 {
+  font-family: 'MADE-Mirage';
+  font-weight: 100;
+  word-spacing: 0.03em;
+  position: relative;
+  font-style: normal;
+  font-size: 120px;
+  line-height: 120px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  z-index: 2;
+}
+
+.menu-button {
+  display: none;
+} */
+
+@media screen and (max-width: 480px) {
+  .partnership_hero_heading h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .partnership_hero_heading h1 {
+    font-size: 65px;
+    line-height: 58px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .partnership_hero_heading h1 {
+    font-size: 75px;
+    line-height: 68px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .partnership_hero_heading h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .partnership_hero_heading h1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partnership_hero_heading h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 25px;
+  }
+}

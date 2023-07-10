@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap");
+@import "../../../fonts.css";
+
+.testimonials {
+  background-image: url("../../../images/LandingPage//Testimonials/testimonials_main_image.png");
+  background-position: center;
+  background-size: cover;
+
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials_quoteicon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.testimonials_feedback {
+  font-family: "MADE-Mirage";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 37px;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin: 3rem 0.5rem;
+}
+
+.testimonials_userdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials_userdetails img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials_userDetails_right {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.testimonials_userDetails_right p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "MADE-Mirage";
+  font-weight: 100;
+  letter-spacing: 0.07em;
+}
+
+.testimonials_pagination {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+  font-family: "Red Hat Display";
+}
+
+.testimonials_pagination_active {
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.6rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonials_pagination_notactive {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonials {
+    padding: 3rem;
+  }
+  .testimonials_feedback {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .testimonials {
+    padding: 2rem;
+  }
+  .testimonials_feedback {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .testimonials_pagination_active {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.7rem;
+  }
+
+  .testimonials_pagination_notactive {
+    font-size: 0.7rem;
+    padding: 0.6rem 1.1rem;
+  }
+  .testimonials_pagination {
+    gap: 0.2rem;
+  }
+}

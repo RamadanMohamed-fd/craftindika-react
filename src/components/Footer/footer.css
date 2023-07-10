@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap");
+@import "../../fonts.css";
+
+.text {
+  font-family: "MADE-Mirage";
+  font-weight: 50;
+}
+
+.footer_lower_left .footer_lower_right a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display&display=swap");
+.text1 {
+  font-family: "Red Hat Display", sans-serif;
+}
+.under::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #c5a56f;
+  transition: 1s;
+}
+.under:hover::after {
+  width: 70%;
+}
