@@ -46,3 +46,21 @@
   font-weight: 400;
   vertical-align: super;
 }
+@media (max-width: 685px) {
+  .partnership_hero_heading h1 {
+    font-size: 100px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 640px) {
+  .partnership_hero_heading h1 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+@media (max-width: 380px) {
+  .partnership_hero_heading h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}

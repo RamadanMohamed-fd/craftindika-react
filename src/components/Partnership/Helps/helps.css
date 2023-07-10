@@ -25,7 +25,7 @@
   width: 353px;
   height: 244px;
   background-color: rgba(197, 165, 111, 1);
-  /* transform: translateX(150px); */
+  transform: translateX(150px);
   border-radius: 15px;
   transform: translateY(-50px);
   z-index: -100;
@@ -85,137 +85,6 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
-  .helps {
-    padding: 2rem;
-    padding-top: 7rem;
-  }
-
-  .helps_heading {
-    transform: translateX(-15px);
-    text-align: left;
-  }
-
-  .helps_heading_box {
-    width: 195px;
-    height: 110px;
-    transform: translate(56px, -90px);
-  }
-
-  .helps_heading h3 {
-    font-size: 26px;
-    line-height: 34px;
-    transform: translateX(-20px);
-  }
-
-  .helps_paras {
-    text-align: justify;
-  }
-
-  .helps_paras p {
-    display: inline;
-    font-size: 18px;
-    line-height: 25px;
-    word-spacing: 0.01em;
-  }
-
-  .helps_paras img {
-    display: none;
-  }
-
-  .helps_link a {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .helps {
-    padding: 1rem;
-    padding-top: 9rem;
-  }
-  .helps_heading_box {
-    max-width: 120px;
-    max-height: 120px;
-    /* transform: translateX(10px); */
-  }
-
-  .helps_heading h3 {
-    font-size: 25px;
-  }
-
-  .helps_paras p {
-    display: flex;
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .helps {
-    padding: 2rem;
-    padding-top: 9rem;
-  }
-
-  .helps_heading {
-    transform: translateX(90px);
-  }
-
-  .helps_heading_box {
-    max-width: 210px;
-    max-height: 120px;
-    transform: translateY(-105px);
-  }
-
-  .helps_heading h3 {
-    font-size: 35px;
-    line-height: 47px;
-    text-align: center;
-    transform: translateX(-160px);
-  }
-
-  .helps_paras p {
-    display: flex;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .helps_paras img {
-    display: none;
-  }
-
-  .helps_link a {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .helps {
-    padding: 4rem;
-    padding-top: 8rem;
-  }
-
-  .helps_heading {
-    transform: translateX(50px);
-  }
-
-  .helps_heading_box {
-    width: 320px;
-    height: 220px;
-    background-color: rgba(197, 165, 111, 1);
-    transform: translateY(-45px);
-    z-index: -100;
-  }
-
-  .helps_heading h3 {
-    font-size: 36px;
-    line-height: 42px;
-    transform: translateX(-145px);
-  }
-
-  .helps_paras img {
-    transform: translate(75%, -130%);
-    height: 75px;
-    width: 75px;
-  }
-}
-
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .helps {
     padding: 5rem;
@@ -245,5 +114,115 @@
     transform: translate(150%, -100%);
     height: 80px;
     width: 80px;
+  }
+}
+@media only screen and (min-width: 785px) and (max-width: 1024px) {
+  .helps {
+    padding: 4rem;
+    padding-top: 8rem;
+  }
+
+  .helps_heading {
+    transform: translateX(50px);
+  }
+
+  .helps_heading_box {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(197, 165, 111, 1);
+    transform: translateY(-45px);
+    z-index: -100;
+  }
+
+  .helps_heading h3 {
+    font-size: 36px;
+    line-height: 42px;
+    transform: translateX(-145px);
+  }
+
+  .helps_paras img {
+    transform: translate(75%, -130%);
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media only screen and (min-width: 592px) and (max-width: 785px) {
+  .helps {
+    padding: 2rem 1rem;
+    padding-top: 9rem;
+  }
+
+  .helps_heading {
+    transform: translateX(90px);
+  }
+
+  .helps_heading_box {
+    max-width: 180px;
+    max-height: 120px;
+    transform: translateY(-30px) !important;
+  }
+
+  .helps_heading h3 {
+    font-size: 28px;
+    line-height: 47px;
+    text-align: center;
+    transform: translateX(-160px);
+  }
+
+  .helps_paras p {
+    display: flex;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .helps_paras img {
+    display: none;
+  }
+
+  .helps_link a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 592px) {
+  .helps {
+    padding: 2rem;
+    padding-top: 7rem;
+  }
+
+  .helps_heading {
+    transform: translateX(-15px);
+    text-align: left;
+  }
+
+  .helps_heading_box {
+    width: 195px;
+    height: 110px;
+    transform: translate(56px, -50px) !important;
+  }
+
+  .helps_heading h3 {
+    font-size: 26px;
+    line-height: 34px;
+    transform: translateX(-20px);
+  }
+
+  .helps_paras {
+    text-align: justify;
+  }
+
+  .helps_paras p {
+    display: inline;
+    font-size: 18px;
+    line-height: 25px;
+    word-spacing: 0.01em;
+  }
+
+  .helps_paras img {
+    display: none;
+  }
+
+  .helps_link a {
+    font-size: 20px;
   }
 }

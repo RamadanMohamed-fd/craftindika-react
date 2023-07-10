@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import "../../LandingPage/Hero/hero.css";
 const PartnershipHero = () => {
   return (
-    <div className={`partnership_hero min-h-[100vh] max-sm:min-h-[70vh]`}>
+    <div className={`partnership_hero min-h-[100vh] max-sm:min-h-[85vh]`}>
       <nav className="h-[100px]  absolute z-[100] w-[88%]  ml-[6%] text-white hero_nav_logo flex justify-center  items-center">
         <h3
           data-aos="fade-right"
@@ -42,7 +42,7 @@ const PartnershipHero = () => {
       </nav>
       <div
         data-aos="fade-up"
-        className={`partnership_hero_heading h-full left-0 w-full  `}
+        className={`partnership_hero_heading h-full left-0 w-full   `}
       >
         <h1>
           CraftPartner<span> ©</span>

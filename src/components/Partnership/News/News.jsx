@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./news.css";
 import { FaQuoteLeft } from "react-icons/fa";
+import Zoom from "react-reveal/Zoom";
 import { useNavigate } from "react-router-dom";
 
 const News = () => {
   const [currNews, setCurrNews] = useState(0);
-  // const [newsCart, setNewsCart] = useState(false);
+  const [newsCart, setNewsCart] = useState(false);
   const navigate = useNavigate();
 
   const newsData = [
@@ -30,25 +31,26 @@ const News = () => {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setCurrNews((currNews + 1) % 4);
-      // setNewsCart(false);
     }, 8000);
-    // setNewsCart(true);
+
     return () => clearTimeout(timeOut);
   }, [currNews]);
 
   const handleBlogClick = () => {
-    // setNewsCart(true);
     navigate(`/partnership/blog?q=${currNews + 1}`);
   };
+
   return (
-    <div className="news px-[5rem]  max-sm:px-[1rem] pt-[7rem] pb-[2rem]  ">
+    <div
+      data-aos="zoom-in"
+      className="news px-[5rem]  max-sm:px-[1rem] pt-[7rem] pb-[2rem]  "
+    >
       <div
-        data-aos="zoom-in"
         onClick={() => handleBlogClick()}
         className={
           currNews === 0
             ? "news_box  py-[22px] px-[60px] max-sm:pr-[15px] max-sm:pl-[55px] "
-            : "news_box  py-[22px] px-[60px] max-sm:pr-[30px]  "
+            : `news_box  py-[22px] px-[60px] max-sm:pr-[30px]  `
         }
       >
         <h1>
