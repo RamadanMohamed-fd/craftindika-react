@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import Hero from "./Hero/Hero";
-import Artisanal from "./Artisanal/Artisanal";
-import Mission from "./Mission/Mission";
-import Embark from "./Embark/Embark";
-import Certified from "./Certified/Certified";
-import Essence from "./Essence/Essence";
-import Testimonials from "./Testimonials/Testimonials";
-import Footer from "../Footer/Footer";
-import Collection from "../Collection/Collection";
-import Featured from "./Featured/Featured";
-import Showcase from "./Showcase/Showcase";
-import Process from "./Process/Process";
-import FAQComponent from "../FAQComponent/FAQComponent";
-import { useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Hero from "./Hero/Hero";
+const Artisanal = lazy(() => import("./Artisanal/Artisanal"));
+const Mission = lazy(() => import("./Mission/Mission"));
+const Embark = lazy(() => import("./Embark/Embark"));
+const Certified = lazy(() => import("./Certified/Certified"));
+const Essence = lazy(() => import("./Essence/Essence"));
+const Testimonials = lazy(() => import("./Testimonials/Testimonials"));
+const Footer = lazy(() => import("../Footer/Footer"));
+const Collection = lazy(() => import("../Collection/Collection"));
+const Featured = lazy(() => import("./Featured/Featured"));
+const Showcase = lazy(() => import("./Showcase/Showcase"));
+const Process = lazy(() => import("./Process/Process"));
+const FAQComponent = lazy(() => import("../FAQComponent/FAQComponent"));
+
 const LandingPage = () => {
   const faqCompHeading = {
     firstLine: "Introducing",
@@ -31,18 +31,42 @@ const LandingPage = () => {
   return (
     <div>
       <Hero />
-      <Artisanal />
-      <Featured />
-      <Collection />
-      <Essence />
-      <Mission />
-      <Testimonials />
-      <Process />
-      <Certified />
-      <Showcase />
-      <FAQComponent heading={faqCompHeading} />
-      <Embark />
-      <Footer linkValue={handleLinkValue} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Artisanal />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Featured />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Collection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Essence />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Mission />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Testimonials />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Process />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Certified />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Showcase />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <FAQComponent heading={faqCompHeading} />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Embark />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer linkValue={handleLinkValue} />
+      </Suspense>
     </div>
   );
 };

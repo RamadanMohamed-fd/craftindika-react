@@ -41,10 +41,7 @@ const News = () => {
   };
 
   return (
-    <div
-      data-aos="zoom-in"
-      className="news px-[5rem]  max-sm:px-[1rem] pt-[7rem] pb-[2rem]  "
-    >
+    <div className="news px-[5rem]  max-sm:px-[1rem] pt-[7rem] pb-[2rem]  ">
       <div
         onClick={() => handleBlogClick()}
         className={
